@@ -1,3 +1,42 @@
-h1{
-    color: red;
+@import 'fonts';
+@import 'utils'; 
+@import 'vars';
+@import 'media-queries'; 
+
+
+.container-fluid {
+    padding: 0;
+}
+
+//HTML TAGS
+body{
+    margin: 0;
+    padding: 0;
+    @include set-text('robotobold', false, false);
+}
+
+//NAV
+.navbar{
+    background-color: $dark-grey;
+}
+.navbar-nav{
+    display: inline-block;
+}
+/*.form-search{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}*/
+.textbox-search{
+    align-content: center;
+}
+.btn-search{
+    align-content: center;
+}
+.logo-endurance{
+    color: $green;
+    text-decoration: none;
+}
+.logo-tickets{
+    color: $ligth-grey;
 }

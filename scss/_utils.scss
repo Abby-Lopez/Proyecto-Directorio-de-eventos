@@ -1,0 +1,14 @@
+@mixin set-text($font, $size, $color) {
+    @if $font {
+        font-family: $font;
+    }
+
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $color {
+        color: $color;
+    }
+    
+}

@@ -17,21 +17,10 @@ body{
 
 //NAV
 .navbar{
-    background-color: $dark-grey;
+   background-color: $dark-grey;
 }
-.navbar-nav{
-    display: inline-block;
-}
-/*.form-search{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}*/
-.textbox-search{
-    align-content: center;
-}
-.btn-search{
-    align-content: center;
+.nav-item-color{
+    color: $ligth-grey;
 }
 .logo-endurance{
     color: $green;

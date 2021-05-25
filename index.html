@@ -11,51 +11,162 @@
     <title>EnduranceTickets</title>
 </head>
 <body>
-    <!-- container -->
+  <!-- header -->
+
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-    
-        <!-- header -->
-    <header class="row">
-        
-        <!-- nav -->
-        <div class="col">
-            <nav class="navbar">
-                  <a class="logo-endurance" href="#">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
-                    <ul>
-                        <form class="form-search">
-                            <input class="textbox-search" type="search" placeholder="Buscar evento" aria-label="Search">
-                            <button class="btn-search" type="submit">Buscar</button>
-                        </form>  
-                        <li class="nav-item"><a href="#">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Triatlon</a></li>
-                                    <li><a href="#">Natación</a></li>
-                                    <li><a href="#">Atletismo</a></li>
-                                    <li><a href="#">Ciclismo</a></li>
-                                </ul>
-                       </li>
-                    </ul>
-              </nav>
-        </div>
-        <!-- nav -->
-
-        <!-- slider -->
-       
-        <!-- slider -->                                                                       
-    </header>
-    <!-- header -->
-
-    
-    <form class="form-search">
-        <input class="textbox-search" type="search" placeholder="Buscar evento" aria-label="Search">
-        <button class="btn-search" type="submit">Buscar</button>
-    </form> 
+        <a class="logo-endurance" href="#">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-item-color" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Triatlón</a></li>
+              <li><a class="dropdown-item" href="#">Natación</a></li>
+              <li><a class="dropdown-item" href="#">Atletismo</a></li>
+              <li><a class="dropdown-item" href="#">Ciclismo</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <!-- container -->
-    
+  </nav>
+  <!-- nav -->
+  
+  <!-- slider -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/tenisVerdes.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/palco.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/filaCiclistas.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/clavado.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- slider -->
 
+    <div>
+      <h1>TUS EVENTOS DE ENDURANCE EN UN SOLO LUGAR</h1>
+      <p>¡INCRIBETE PRONTO!</p>
+    </div>
+  <!-- header -->
+
+  <!-- galery -->
+  <h2>GALERIA DE EVENTOS </h2>
+        <div class="row">
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <div>
+                <p>June</p>
+                <p>05</p>
+                <P>2021</P>
+              </div>
+              <img src="./img/trailRunner.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                <p class="card-text">Lugar - 00:00 am</p>
+                <p class="card-text">Categoría</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <div>
+                <p>June</p>
+                <p>05</p>
+                <P>2021</P>
+              </div>
+              <img src="./img/ciclistaRuta.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                <p class="card-text">Lugar - 00:00 am</p>
+                <p class="card-text">Categoría</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <div>
+                <p>June</p>
+                <p>05</p>
+                <P>2021</P>
+              </div>
+              <img src="./img/neopreno.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                <p class="card-text">Lugar - 00:00 am</p>
+                <p class="card-text">Categoría</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <div>
+                <p>June</p>
+                <p>05</p>
+                <P>2021</P>
+              </div>
+              <img src="./img/colorRun.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                <p class="card-text">Lugar - 00:00 am</p>
+                <p class="card-text">Categoría</p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+          </div>  
+       </div>
+  <!-- galery -->
+
+  <!-- footer -->
+  <footer class="row justify-content-center">
+    <div class="col-10 pl-0">
+        <p class="logo-endurance">ENDURANCE<span class="logo-tickets">TICKETS</span></p>
+        <p> &copy;2021 Copyright: @abbylopez00</p>
+    </div>
+    
+</footer>
+<!-- footer -->
 
 
 

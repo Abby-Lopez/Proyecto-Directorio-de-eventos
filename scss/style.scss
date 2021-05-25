@@ -14,10 +14,13 @@ body{
     padding: 0;
     @include set-text('robotobold', false, false);
 }
+footer{
+    background-color: $card-grey;
+}
 
 //NAV
 .navbar{
-   background-color: $dark-grey;
+   background-color: $nav-grey;
 }
 .nav-item-color{
     color: $ligth-grey;
@@ -28,4 +31,25 @@ body{
 }
 .logo-tickets{
     color: $ligth-grey;
+}
+
+//GALERY
+.galeryContainer{
+    background-color:$nav-grey;
+}
+.card{
+    background-color: $card-grey;
+}
+.card-date{
+    background-color: $green;
+    color: $nav-grey;
+}
+.card-title{
+    color: $letters-white;
+}
+.card-text{
+    color: $letters-grey;
+}
+.card-category{
+    color: $green;
 }

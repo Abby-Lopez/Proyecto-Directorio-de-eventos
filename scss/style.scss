@@ -25,6 +25,9 @@ footer{
 a{
     text-decoration: none;
 }
+
+//---------------------------------------------------------------INDEX.HTML--------------------------------------------------------------------
+
 //HEADER
 .header-tittle{
     position: absolute;
@@ -123,7 +126,6 @@ a{
 	background-color: $card-grey;
     opacity: 0.6;
 }
-
 //GALERY
 .galeryContainer{
     background-color:$nav-grey;
@@ -167,9 +169,7 @@ a{
 .card-category{
     color: $green;
 }
-
 //FOOTER
-
 .footer-endurance{
     position: absolute;
     @include set-text('robotobold', 1.5em, $green);
@@ -183,4 +183,65 @@ a{
     position: relative;
     @include set-text('robotomedium', .8em, $footer-grey);
     padding: 3.5em 0 .5em;
+}
+//---------------------------------------------------------------EVENTO.HTML--------------------------------------------------------------------
+
+//CARD
+.bg-color-event{
+    background-color: $bg-grey;
+}
+.card-image{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+}
+.card-content{
+    //position: absolute;
+    background-color: $card-grey;
+    border-radius: 2em;
+}
+.card-info-top{
+    display: inline-block;
+    color: $letters-white;
+}
+.info-reg{
+    background-color: $footer-grey;
+    border-radius: 1em;
+    padding: .5em 1em;
+    margin: 1em;
+}
+.info-reg-green{
+    background-color: $green;
+}
+.info-text{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.progress-bar-content{
+    margin-top: 3em;
+    padding: 0 5em 0 15em ;
+}
+.progress{
+    height: 2em;
+    font-size: 0.8em;
+    border-radius: 2em;
+}
+.progress-bar{
+    background-color: $progress-bar;
+}
+.card-main-info{
+    padding: 0 5em;
+}
+.card-title-event{
+    @include set-text('robotoblack', 2em, $letters-white);
+}
+.card-text-event{
+    @include set-text('robotomedium', 1em, $letters-grey);
+}
+.btn-register{
+    background-color: $green;
+    @include set-text('robotoblack', 1em, $letters-white);
+    margin: 2em 2em 0 20em;
+    padding: 1em 2em;
 }

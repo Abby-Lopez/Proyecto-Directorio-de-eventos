@@ -12,11 +12,13 @@
 
 </head>
 <body>
+  <!-- container -->
+  <div class="container-fluid bg-color-event">
     <!--nav-->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
         <a class="logo-endurance" href="#">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,7 +27,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav-item-color" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorias
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -36,44 +38,52 @@
             </ul>
           </li>
         </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
       </div>
     </div>
   </nav>
   <!-- nav -->
   <!-- card -->
-      <div class="card" style="width: 80rem;">
-        <div>
-            <p>June</p>
-            <p>05</p>
-            <P>2021</P>
+      <div class="container m-auto mt-5 mb-5">
+        <div class="card" style="width: 80rem;">
+          <div class="card-date">
+            <p class="date-text">Julio</p>
+            <p class="date-number">05</p>
+            <P class="date-text">2021</P>
           </div>
-        <img src="./img/aguasAbiertas.jpg" class="card-img-top" alt="...">
-        <div class="row">
-              <div class="col-8 card-body">
+          <div class="card-image">
+            <img src="./img/aguasAbiertas.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-6 card-body">
                 <ul>
-                    <li><div><p>Natación</p></div></li>
-                    <li><div><p>Adultos</p></div></li>
-                    <li><div><p>₡20.000</p></div></li>
+                    <li class="card-info-top"><div class="info-reg"><p class="info-text">Natación</p></div></li>
+                    <li class="card-info-top"><div class="info-reg"><p class="info-text">Adultos</p></div></li>
+                    <li class="card-info-top"><div class="info-reg info-reg-green"><p class="info-text">₡20.000</p></div></li>
                 </ul>
               </div>
-              <div class="col-4 card-body">
+              <div class="col-6 progress-bar-content">
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> CUPOS 25%</div>
                 </div>
               </div>
         </div>
         <div class="row">
-            <div class="col-8 card-body">
-                <h5 class="card-title">NOMBRE DEL EVENTO</h5>
-                <p class="card-text">Lugar del evento - 00:00 am</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="col-6 card-main-info">
+                <h5 class="card-title-event">NOMBRE DEL EVENTO</h5>
+                <p class="card-text-event">Lugar del evento - 00:00 am</p>
+                <p class="card-text-event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </div>
-              <div class="col-4 card-body">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col-6 ">
+                <a href="#" class="btn btn-register">registrarse</a>
               </div>
         </div>
         <div class="row">
-            <h5>EVENTOS SIMILARES</h5>
+            <h5 class="galery-text">EVENTOS SIMILARES</h5>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -155,17 +165,19 @@
                 </button>
               </div>
         </div>
-      </div>
-    <!-- card -->
-    <!-- footer -->
-    <footer class="row justify-content-center">
-        <div class="col-10 pl-0">
-            <p class="logo-endurance">ENDURANCE<span class="logo-tickets">TICKETS</span></p>
-            <p> &copy;2021 Copyright: @abbylopez00</p>
+          </div>
         </div>
-    </footer>
-    <!-- footer -->
+      </div>
+  <!-- card -->
+  <!-- footer -->
+  <footer>
+    <p class="footer-endurance">ENDURANCE<span class="footer-tickets">TICKETS</span></p>
+    <p class="copyright"> &copy;2021 Copyright: @abbylopez00</p>
+  </footer>
+  <!-- footer -->
 
+  </div>
+  <!-- container -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>

@@ -6,6 +6,7 @@
 
 .container-fluid {
     padding: 0;
+    margin: 0;
 }
 
 //HTML TAGS
@@ -15,15 +16,33 @@ body{
     @include set-text('robotobold', false, false);
 }
 footer{
-    background-color: $card-grey;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $card-grey; 
 }
-
+//HEADER
+.header-tittle{
+    position: absolute;
+    @include set-text('robotoblack', 3.2em, $letters-white);
+    z-index: 1;
+    line-height: 1.1em;
+    width: 35%;
+    margin: 3em 0 0 1.8em;
+}
+.header-text{
+    position: absolute;
+    z-index: 1;
+    @include set-text('robotoblack', 1.5em, $green);
+    margin: 14em 0 0 4em;
+}
 //NAV
 .container{
     margin: 0 1em 0 1em;
 }
 .logo-endurance{
-    color: $green;
+    @include set-text('robotobold', 1.2em, $green);
     text-decoration: none;
 
     &:hover{
@@ -43,6 +62,7 @@ footer{
 }
 .nav-link{
     color: $ligth-grey;
+    text-transform: uppercase;
 
     &:hover{
         color: $green;
@@ -77,6 +97,7 @@ footer{
     }
 }
 .btn{
+    text-transform: uppercase;
     border: 2px solid transparent;
     border-radius: 1rem;
     padding: .100rem .75rem;
@@ -88,6 +109,18 @@ footer{
     border: 1px solid $card-grey;
     
 }
+//SLIDER
+.carousel-item:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $card-grey;
+    opacity: 0.6;
+}
+
 //GALERY
 .galeryContainer{
     background-color:$nav-grey;
@@ -107,4 +140,9 @@ footer{
 }
 .card-category{
     color: $green;
+}
+
+//FOOTER
+.copyright{
+    color: $footer-grey;
 }

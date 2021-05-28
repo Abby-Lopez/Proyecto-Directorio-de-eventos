@@ -22,6 +22,9 @@ footer{
     text-align: center;
     background-color: $card-grey; 
 }
+a{
+    text-decoration: none;
+}
 //HEADER
 .header-tittle{
     position: absolute;
@@ -125,12 +128,35 @@ footer{
 .galeryContainer{
     background-color:$nav-grey;
 }
+.galery-text{
+    @include set-text('robotobold', 1em, $footer-grey);
+    padding: 2em 6em;
+}
 .card{
     background-color: $card-grey;
+    border-radius: 2em;
 }
 .card-date{
+    position: absolute;
+    z-index: 1;
     background-color: $green;
     color: $nav-grey;
+    margin: 0 2em;
+    padding: 0.5em;
+}
+.date-text{
+    @include set-text('robotoregular', 0.6em, $card-grey);
+    margin: 0;
+    text-align: center;
+}
+.date-number{
+    @include set-text('robotomedium', 2em, $card-grey);
+    margin: 0;
+    line-height: 0.8em;
+}
+.card-img-top{
+    border-top-left-radius: calc(2rem - 1px);
+    border-top-right-radius: calc(2rem - 1px);
 }
 .card-title{
     color: $letters-white;
@@ -143,6 +169,18 @@ footer{
 }
 
 //FOOTER
+
+.footer-endurance{
+    position: absolute;
+    @include set-text('robotobold', 1.5em, $green);
+    padding: .5em 0 0;
+    opacity: 0.8;
+}
+.footer-tickets{
+    color: $letters-white;
+}
 .copyright{
-    color: $footer-grey;
+    position: relative;
+    @include set-text('robotomedium', .8em, $footer-grey);
+    padding: 3.5em 0 .5em;
 }

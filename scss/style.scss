@@ -376,7 +376,7 @@ a{
 }
 .register-tittle{
     color: $letters-white;
-    padding: 3em 0 0 0;
+    padding: 2em 0 0 0;
     margin: 0;
 }
 .letters-grey{
@@ -408,5 +408,17 @@ input[type=text] {
     background-color: $green;
 }
 .progressbar li.step2 + li:after{
+    background-color: $green;
+}
+.text-muted{
+    padding-left: 1em;
+}
+
+//---------------------------------------------------------------MODAL CUENTA--------------------------------------------------------------------
+
+.progressbar li.step3{
+    color: $green;
+}
+.progressbar li.step3:before{
     background-color: $green;
 }

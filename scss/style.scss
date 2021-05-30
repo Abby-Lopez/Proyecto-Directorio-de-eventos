@@ -7,6 +7,9 @@
 .container-fluid {
     padding: 0;
     margin: 0;
+    @include respond-to($phone) {
+        background-color: $nav-grey;
+    }
 }
 
 //HTML TAGS
@@ -36,16 +39,25 @@ a{
     line-height: 1.1em;
     width: 35%;
     margin: 3em 0 0 1.8em;
+    @include respond-to($phone) {
+        visibility: hidden;
+    }
 }
 .header-text{
     position: absolute;
     z-index: 1;
     @include set-text('robotoblack', 1.5em, $green);
     margin: 14em 0 0 4em;
+    @include respond-to($phone) {
+        visibility: hidden;
+    }
 }
 //NAV
 .container{
     margin: 0 1em 0 1em;
+    @include respond-to($phone) {
+        margin: auto;
+     }
 }
 .logo-endurance{
     @include set-text('robotobold', 1.2em, $green);
@@ -65,6 +77,9 @@ a{
 }
 .navbar-collapse {
     margin: 0 -8em 0 3em;
+    @include respond-to($phone) {
+        margin: auto;
+     }
 }
 .nav-link{
     color: $ligth-grey;
@@ -76,6 +91,11 @@ a{
 }
 .navbar-light{
     color: $ligth-grey
+}
+.navbar-toggler{
+    @include respond-to($phone) {
+        padding: .25rem 0;
+     }
 }
 .navbar-toggler:focus {
     text-decoration: none;
@@ -116,6 +136,12 @@ a{
     
 }
 //SLIDER
+.carousel{
+    @include respond-to($phone) {
+        margin: 1em 2em;
+        
+    }
+}
 .carousel-item:before {
 	content:'';
 	position: absolute;
@@ -123,8 +149,18 @@ a{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: $card-grey;
+	background-color: $nav-grey;
     opacity: 0.6;
+    @include respond-to($phone) {
+        bottom: 1em;
+        height: 12em;
+    }
+}
+.border-img{
+    @include respond-to($phone) {
+        border-radius: 2em;
+        height: 12em;
+    }
 }
 //GALERY
 .galeryContainer{
@@ -133,10 +169,15 @@ a{
 .galery-text{
     @include set-text('robotobold', 1em, $footer-grey);
     padding: 2em 6em;
+    @include respond-to($phone) {
+        padding: 2em 2em;
+    }
 }
 .card{
     background-color: $card-grey;
     border-radius: 2em;
+    margin: auto;
+    margin-bottom: 2em;
 }
 .card-date{
     position: absolute;

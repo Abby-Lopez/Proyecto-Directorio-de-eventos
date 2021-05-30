@@ -75,7 +75,7 @@
                 <p class="card-text-event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </div>
               <div class="col-6 ">
-                <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#eventModal">
+                <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#modalRegistro">
                   registrarse
               </button>
               </div>
@@ -226,8 +226,8 @@
         </div>
       </div>
   <!-- card -->
-  <!-- Modal -->
-  <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+  <!-- modal registro-->
+  <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
      <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="row">
@@ -266,7 +266,10 @@
                   <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">1 Adulto </span> <span class="text-muted letters-grey">₡15000</span> </div>
                   <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">2 Niños </span> <span class="text-muted letters-grey">₡20000</span> </div>
                   <div class="d-flex justify-content-between mt-3"> <span class="font-weight-bold total-color">Total</span> <span class="font-weight-bold theme-color total-color">₡35000</span> </div>
-                  <div class="text-center mt-5"> <button class="btn btn-register">registrarse</button> </div>
+                  <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#modalCuenta">
+                    registrarse
+                </button>
+                  <!--<div class="text-center mt-5"> <button class="btn btn-register">registrarse</button> </div>-->
                 </div>    
 
               </div>
@@ -274,7 +277,48 @@
           </div>
       </div>
   </div>
-  <!-- Modal -->
+  <!-- modal registro -->
+
+    <!-- modal cuenta-->
+    <div class="modal fade" id="modalCuenta" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+           <div class="modal-content">
+             <div class="row">
+               <button type="button" class="btn-close btn-position" data-bs-dismiss="modal" aria-label="Close"></button>
+               <div class="col">
+                 <div class="modal-image"></div>
+                <div class="box-event-name"><h3 class="event-name">Nombre del <br> evento</h3></div>
+                 <div class="price-box"><p class="price">₡15000</p></div>
+               </div>
+               <div class="col modal-register">
+                 <div class="px-4 py-5">
+                   <div class="progress-track">
+                     <ul class="progressbar">
+                         <li class="active">Registro</li>
+                         <li class="step2">Cuenta</li>
+                         <li class="step3">Revisión</li>
+                     </ul>
+                 </div>
+                 <h4 class="mt-5 register-tittle">CUENTA PARTICIPANTE</h4> 
+                    <form class="cuenta" action="/action_page.php">
+                      <label for="fname" class="letters-grey">Nombre</label>
+                      <input type="text" id="fname" name="fname"><br><br>
+                      <label for="lname" class="letters-grey">Apellidos</label>
+                      <input type="text" id="lname" name="lname"><br><br>
+                      <label for="lname" class="letters-grey">Correo electrónico</label>
+                      <input type="text" id="lname" name="lname"><br><br>
+                    </form>
+                    <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#modalCuenta">
+                      registrarse
+                  </button>
+                 </div>    
+ 
+               </div>
+             </div>
+           </div>
+       </div>
+   </div>
+   <!-- modal cuenta -->
 
   <!-- footer -->
   <footer>

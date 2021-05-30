@@ -83,7 +83,7 @@
         <div class="row">
             <h5 class="galery-text">EVENTOS SIMILARES</h5>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="container carousel-inner">
+                <div class="container carousel-inner pb-4">
                   <div class="carousel-item active">
                     <div class="row">
                         <div class="col-2"></div>
@@ -231,32 +231,42 @@
      <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="row">
-              <div class="col modal-image">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h3 class="event-name">Nombre del evento</h3>
+              <button type="button" class="btn-close btn-position" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="col">
+                <div class="modal-image"></div>
+               <div class="box-event-name"><h3 class="event-name">Nombre del <br> evento</h3></div>
                 <div class="price-box"><p class="price">₡15000</p></div>
               </div>
               <div class="col modal-register">
-                <div class="progress-track">
+                <div class="px-4 py-5">
+                  <div class="progress-track">
                     <ul class="progressbar">
                         <li class="active">Registro</li>
                         <li>Cuenta</li>
                         <li>Revisión</li>
                     </ul>
                 </div>
-
-                <div class="px-4 py-5">
-                  <h4 class="mt-5 theme-color mb-5">REGISTRO DE PARTICIPANTES</h4> 
-                  <div class="d-flex justify-content-between"> <span class="font-weight-bold">Tipo de participante</span> <span class="text-muted">xxx</span> </div>
-                  <div class="d-flex justify-content-between"> <span class="font-weight-bold">Cantidad de personas</span> <span class="text-muted">xxx</span> </div>
-                  <div class="mb-3">
-                      <hr class="new1">
+                  <h4 class="mt-5 register-tittle mb-5">REGISTRO DE PARTICIPANTES</h4> 
+                  <div class="d-flex justify-content-between letters-grey"> <span class="font-weight-bold">Tipo de participante</span> 
+                    <span class="text-muted letters-grey">
+                      <select name="tipo-persona" id="tipo-persona">
+                        <option value="adulto">Adulto</option>
+                        <option value="niño">Niño</option>
+                      </select>
+                    </span>
                   </div>
-                  <div class="d-flex justify-content-between"> <span class="font-weight-bold">1 Adulto </span> <span class="text-muted">$1750.00</span> </div>
-                  <div class="d-flex justify-content-between"> <small>2 Infantes</small> <small>$175.00</small> </div>
-                  <div class="d-flex justify-content-between"> <small>Tax</small> <small>$200.00</small> </div>
-                  <div class="d-flex justify-content-between mt-3"> <span class="font-weight-bold">Total</span> <span class="font-weight-bold theme-color">$2125.00</span> </div>
-                  <div class="text-center mt-5"> <button class="btn btn-primary">registrarse</button> </div>
+                  <div class="d-flex justify-content-between mt-3 letters-grey"> <span class="font-weight-bold">Cantidad de personas</span> 
+                    <span class="text-muted">
+                      <input type="number" size="3" class="input-number">
+                    </span> 
+                  </div>
+                  <div class="mb-3">
+                      <hr class="new1 letters-grey">
+                  </div>
+                  <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">1 Adulto </span> <span class="text-muted letters-grey">₡15000</span> </div>
+                  <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">2 Niños </span> <span class="text-muted letters-grey">₡20000</span> </div>
+                  <div class="d-flex justify-content-between mt-3"> <span class="font-weight-bold total-color">Total</span> <span class="font-weight-bold theme-color total-color">₡35000</span> </div>
+                  <div class="text-center mt-5"> <button class="btn btn-register">registrarse</button> </div>
                 </div>    
 
               </div>

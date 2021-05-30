@@ -270,26 +270,52 @@ a{
     margin: 0;
     line-height: 0.9em;
 }
-.carousel-inner{
-    margin: auto;
-    padding: 0 0 2em 0;
-}
+
 
 //---------------------------------------------------------------MODAL REGISTRO--------------------------------------------------------------------
 
 //IMAGE
+.modal-content{
+    background-color: $card-grey;
+    border-radius: 3em;
+}
 .modal-image{
     background: url(../img/aguasAbiertas.jpg);
     background-size: cover;
-    opacity: 1; 
+    height: 100%;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    
+}
+.box-event-name{
+    position: absolute;
+    z-index: 2;
+    /* width: 50%; */
+    top: 2em;
+    margin-left: 2em;
+}
+.btn-position{
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    margin-left: 2em;
 }
 .event-name{
-    @include set-text('robotoblack', 3.2em, $letters-white);
+    margin-top: 1em;
+    text-transform: uppercase;
+    @include set-text('robotoblack', 2.5em, $letters-white);
 }
 .price-box{
+    position: absolute;
+    z-index: 2;
+    width: 11%;
+    padding: 0.5em 1em;
     background-color: $green;
+    top: 12em;
+    margin-left: 2em;
 }
 .price{
+    margin: 0;
     @include set-text('robotoblack', 1.5em, $bg-grey);
 }
 //PROGRESS BAR
@@ -302,6 +328,7 @@ a{
     width: 33.33%;
     position: relative;
     text-align: center;
+    color: $letters-grey;
     z-index: 2;
 }
 .progressbar li:before {
@@ -340,6 +367,19 @@ a{
 .progressbar li.active + li:after{
     background-color: $green;
 }
-
-
-
+.input-number{
+    width: 40%;
+    height: 1.5em;
+    position: relative;
+    right: -6.5em;
+}
+.register-tittle{
+    color: $letters-white;
+    padding: 5em 0 0 0;
+}
+.letters-grey{
+    color: $letters-grey;
+}
+.total-color{
+    color: $letters-white;
+}

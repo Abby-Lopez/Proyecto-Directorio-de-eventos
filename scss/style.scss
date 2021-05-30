@@ -274,3 +274,72 @@ a{
     margin: auto;
     padding: 0 0 2em 0;
 }
+
+//---------------------------------------------------------------MODAL REGISTRO--------------------------------------------------------------------
+
+//IMAGE
+.modal-image{
+    background: url(../img/aguasAbiertas.jpg);
+    background-size: cover;
+    opacity: 1; 
+}
+.event-name{
+    @include set-text('robotoblack', 3.2em, $letters-white);
+}
+.price-box{
+    background-color: $green;
+}
+.price{
+    @include set-text('robotoblack', 1.5em, $bg-grey);
+}
+//PROGRESS BAR
+.progressbar {
+    counter-reset: step;
+}
+.progressbar li {
+    list-style-type: none;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.progressbar li:before {
+    content: '';
+    counter-increment: step;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid $letters-grey;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: $letters-grey;
+    z-index: 2;
+}
+.progressbar li:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: $letters-grey;
+    top: 8px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after{
+    content: none;
+}
+.progressbar li.active{
+    color: $green;
+}
+.progressbar li.active:before{
+    background-color: $green;
+}
+.progressbar li.active + li:after{
+    background-color: $green;
+}
+
+
+

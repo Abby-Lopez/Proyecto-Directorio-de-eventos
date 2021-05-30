@@ -75,7 +75,9 @@
                 <p class="card-text-event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </div>
               <div class="col-6 ">
-                <a href="#" class="btn btn-register">registrarse</a>
+                <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#eventModal">
+                  registrarse
+              </button>
               </div>
         </div>
         <div class="row">
@@ -224,6 +226,46 @@
         </div>
       </div>
   <!-- card -->
+  <!-- Modal -->
+  <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col modal-image">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="event-name">Nombre del evento</h3>
+                <div class="price-box"><p class="price">₡15000</p></div>
+              </div>
+              <div class="col modal-register">
+                <div class="progress-track">
+                    <ul class="progressbar">
+                        <li class="active">Registro</li>
+                        <li>Cuenta</li>
+                        <li>Revisión</li>
+                    </ul>
+                </div>
+
+                <div class="px-4 py-5">
+                  <h4 class="mt-5 theme-color mb-5">REGISTRO DE PARTICIPANTES</h4> 
+                  <div class="d-flex justify-content-between"> <span class="font-weight-bold">Tipo de participante</span> <span class="text-muted">xxx</span> </div>
+                  <div class="d-flex justify-content-between"> <span class="font-weight-bold">Cantidad de personas</span> <span class="text-muted">xxx</span> </div>
+                  <div class="mb-3">
+                      <hr class="new1">
+                  </div>
+                  <div class="d-flex justify-content-between"> <span class="font-weight-bold">1 Adulto </span> <span class="text-muted">$1750.00</span> </div>
+                  <div class="d-flex justify-content-between"> <small>2 Infantes</small> <small>$175.00</small> </div>
+                  <div class="d-flex justify-content-between"> <small>Tax</small> <small>$200.00</small> </div>
+                  <div class="d-flex justify-content-between mt-3"> <span class="font-weight-bold">Total</span> <span class="font-weight-bold theme-color">$2125.00</span> </div>
+                  <div class="text-center mt-5"> <button class="btn btn-primary">registrarse</button> </div>
+                </div>    
+
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal -->
+
   <!-- footer -->
   <footer>
     <p class="footer-endurance">ENDURANCE<span class="footer-tickets">TICKETS</span></p>

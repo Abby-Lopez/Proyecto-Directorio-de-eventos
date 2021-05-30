@@ -236,12 +236,41 @@ a{
 .card-title-event{
     @include set-text('robotoblack', 2em, $letters-white);
 }
-.card-text-event{
+.card-date-event{
     @include set-text('robotomedium', 1em, $letters-grey);
+}
+.card-text-event{
+    @include set-text('robotomedium', 1em, $letters-white);
 }
 .btn-register{
     background-color: $green;
     @include set-text('robotoblack', 1em, $letters-white);
     margin: 2em 2em 0 20em;
     padding: 1em 2em;
+}
+.card-date-e{
+    position: absolute;
+    z-index: 1;
+    background-color: #17BF63;
+    color: #202028;
+    margin: 0px 5em;
+    padding: 0.5em 1.5em;
+}
+.date-text-e {
+    font-family: "robotoregular";
+    font-size: 1em;
+    color: #252733;
+    margin: 0;
+    text-align: center;
+}
+.date-number-e {
+    font-family: "robotobold";
+    font-size: 3em;
+    color: #252733;
+    margin: 0;
+    line-height: 0.9em;
+}
+.carousel-inner{
+    margin: auto;
+    padding: 0 0 2em 0;
 }

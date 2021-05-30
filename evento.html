@@ -38,10 +38,6 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar evento" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -49,10 +45,10 @@
   <!-- card -->
       <div class="container m-auto mt-5 mb-5">
         <div class="card" style="width: 80rem;">
-          <div class="card-date">
-            <p class="date-text">Julio</p>
-            <p class="date-number">05</p>
-            <P class="date-text">2021</P>
+          <div class="card-date-e">
+            <p class="date-text-e">Julio</p>
+            <p class="date-number-e">05</p>
+            <P class="date-text-e">2021</P>
           </div>
           <div class="card-image">
             <img src="./img/aguasAbiertas.jpg" class="card-img-top" alt="...">
@@ -75,7 +71,7 @@
         <div class="row">
             <div class="col-6 card-main-info">
                 <h5 class="card-title-event">NOMBRE DEL EVENTO</h5>
-                <p class="card-text-event">Lugar del evento - 00:00 am</p>
+                <p class="card-date-event">Lugar del evento - 00:00 am</p>
                 <p class="card-text-event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </div>
               <div class="col-6 ">
@@ -85,72 +81,131 @@
         <div class="row">
             <h5 class="galery-text">EVENTOS SIMILARES</h5>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="container carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/nadadores.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
+                        <div class="col-2"></div>
+                        <div class="col-2">
+                          <a href="./evento.html">
+                            <div class="card" style="width: 12rem;">
+                              <div class="card-date">
+                                <p class="date-text">Julio</p>
+                                <p class="date-number">05</p>
+                                <P class="date-text">2021</P>
+                              </div>
+                              <img src="./img/neopreno.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                                <p class="card-text">Lugar - 00:00 am</p>
+                              </div>
                             </div>
+                          </a>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/nadadores.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
+                        <div class="col-2">
+                          <a href="./evento.html">
+                            <div class="card" style="width: 12rem;">
+                              <div class="card-date">
+                                <p class="date-text">Julio</p>
+                                <p class="date-number">05</p>
+                                <P class="date-text">2021</P>
+                              </div>
+                              <img src="./img/piscina.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                                <p class="card-text">Lugar - 00:00 am</p>
+                              </div>
                             </div>
+                          </a>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/nadadores.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
+                        <div class="col-2">
+                          <a href="./evento.html">
+                            <div class="card" style="width: 12rem;">
+                              <div class="card-date">
+                                <p class="date-text">Julio</p>
+                                <p class="date-number">05</p>
+                                <P class="date-text">2021</P>
+                              </div>
+                              <img src="./img/nadadores.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                                <p class="card-text">Lugar - 00:00 am</p>
+                              </div>
                             </div>
+                          </a>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/nadadores.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
+                        <div class="col-2">
+                          <a href="./evento.html">
+                            <div class="card" style="width: 12rem;">
+                              <div class="card-date">
+                                <p class="date-text">Julio</p>
+                                <p class="date-number">05</p>
+                                <P class="date-text">2021</P>
+                              </div>
+                              <img src="./img/niñaNadando.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                                <p class="card-text">Lugar - 00:00 am</p>
+                              </div>
                             </div>
+                          </a>
                         </div>
+                        <div class="col-2"></div>
                     </div>
                   </div>
 
                   <div class="carousel-item">
                     <div class="row">
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/piscina.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/piscina.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/piscina.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">NOMBRE DEL EVENTO</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-3">
-                        </div>
+                      <div class="col-2"></div>
+                      <div class="col-2">
+                        <a href="./evento.html">
+                          <div class="card" style="width: 12rem;">
+                            <div class="card-date">
+                              <p class="date-text">Julio</p>
+                              <p class="date-number">05</p>
+                              <P class="date-text">2021</P>
+                            </div>
+                            <img src="./img/neopreno.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                              <p class="card-text">Lugar - 00:00 am</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-2">
+                        <a href="./evento.html">
+                          <div class="card" style="width: 12rem;">
+                            <div class="card-date">
+                              <p class="date-text">Julio</p>
+                              <p class="date-number">05</p>
+                              <P class="date-text">2021</P>
+                            </div>
+                            <img src="./img/piscina.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                              <p class="card-text">Lugar - 00:00 am</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-2">
+                        <a href="./evento.html">
+                          <div class="card" style="width: 12rem;">
+                            <div class="card-date">
+                              <p class="date-text">Julio</p>
+                              <p class="date-number">05</p>
+                              <P class="date-text">2021</P>
+                            </div>
+                            <img src="./img/nadadores.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+                              <p class="card-text">Lugar - 00:00 am</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
 
                     </div>
                   </div>

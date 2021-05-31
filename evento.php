@@ -15,34 +15,34 @@
   <!-- container -->
   <div class="container-fluid bg-color-event">
     <!--nav-->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="logo-endurance" href="./index.html">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
-      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categorias
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Triatlón</a></li>
-              <li><a class="dropdown-item" href="#">Natación</a></li>
-              <li><a class="dropdown-item" href="#">Atletismo</a></li>
-              <li><a class="dropdown-item" href="#">Ciclismo</a></li>
-            </ul>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="logo-endurance" href="./index.html">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Triatlón</a></li>
+                <li><a class="dropdown-item" href="#">Natación</a></li>
+                <li><a class="dropdown-item" href="#">Atletismo</a></li>
+                <li><a class="dropdown-item" href="#">Ciclismo</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- nav -->
-  <!-- card -->
+    </nav>
+    <!-- nav -->
+    <!-- card -->
       <div class="container-sm m-auto mt-5 mb-5">
         <div class="card" style="width: 100%;">
           
@@ -92,7 +92,7 @@
                         <p class="date-number">05</p>
                         <P class="date-text">2021</P>
                       </div>
-                      <img src="./img/trailRunner.jpg" class="card-img-top" alt="...">
+                      <img src="./img/neopreno.jpg" class="card-img-top" alt="neopreno">
                       <div class="card-body">
                         <h5 class="card-title">NOMBRE DEL EVENTO </h5>
                         <p class="card-text">Lugar - 00:00 am</p>
@@ -109,7 +109,7 @@
                         <p class="date-number">05</p>
                         <P class="date-text">2021</P>
                       </div>
-                      <img src="./img/ciclistaRuta.jpg" class="card-img-top" alt="...">
+                      <img src="./img/piscina.jpg" class="card-img-top" alt="piscina">
                       <div class="card-body">
                         <h5 class="card-title">NOMBRE DEL EVENTO </h5>
                         <p class="card-text">Lugar - 00:00 am</p>
@@ -126,7 +126,7 @@
                         <p class="date-number">05</p>
                         <P class="date-text">2021</P>
                       </div>
-                      <img src="./img/neopreno.jpg" class="card-img-top" alt="...">
+                      <img src="./img/nadadores.jpg" class="card-img-top" alt="nadadores">
                       <div class="card-body">
                         <h5 class="card-title">NOMBRE DEL EVENTO </h5>
                         <p class="card-text">Lugar - 00:00 am</p>
@@ -143,7 +143,7 @@
                         <p class="date-number">05</p>
                         <P class="date-text">2021</P>
                       </div>
-                      <img src="./img/colorRun.jpg" class="card-img-top" alt="...">
+                      <img src="./img/niñaNadando.jpg" class="card-img-top" alt="niña nadando">
                       <div class="card-body">
                         <h5 class="card-title">NOMBRE DEL EVENTO </h5>
                         <p class="card-text">Lugar - 00:00 am</p>
@@ -157,60 +157,60 @@
           
         </div><!--card-->
       </div><!--container-->
-  <!-- card -->
+      <!-- card -->
 
-  <!-- modal registro-->
-  <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="row">
-              <button type="button" class="btn-close btn-position" data-bs-dismiss="modal" aria-label="Close"></button>
-              <div class="col modal-1-page">
-                  <div class="modal-image"></div>
-                  <div class="box-event-name"><h3 class="event-name">Nombre del <br> evento</h3></div>
-                  <div class="price-box"><p class="price">₡15000</p></div>
-              </div>
-              <div class="col modal-register">
-                <div class="px-4 py-5">
-                  <div class="progress-track">
-                    <ul class="progressbar">
-                        <li class="active">Registro</li>
-                        <li>Cuenta</li>
-                        <li>Revisión</li>
-                    </ul>
+    <!-- modal registro-->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="row">
+                <button type="button" class="btn-close btn-position" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="col modal-1-page">
+                    <div class="modal-image"></div>
+                    <div class="box-event-name"><h3 class="event-name">Nombre del <br> evento</h3></div>
+                    <div class="price-box"><p class="price">₡15000</p></div>
                 </div>
-                  <h4 class="mt-5 register-tittle mb-5">REGISTRO DE PARTICIPANTES</h4> 
-                  <div class="d-flex justify-content-between letters-grey"> <span class="font-weight-bold">Tipo de participante</span> 
-                    <span class="text-muted letters-grey">
-                      <select name="tipo-persona" id="tipo-persona">
-                        <option value="adulto">Adulto</option>
-                        <option value="niño">Niño</option>
-                      </select>
-                    </span>
+                <div class="col modal-register">
+                  <div class="px-4 py-5">
+                    <div class="progress-track">
+                      <ul class="progressbar">
+                          <li class="active">Registro</li>
+                          <li>Cuenta</li>
+                          <li>Revisión</li>
+                      </ul>
                   </div>
-                  <div class="d-flex justify-content-between mt-3 letters-grey"> <span class="font-weight-bold">Cantidad de personas</span> 
-                    <span class="text-muted">
-                      <input type="number" size="3" class="input-number">
-                    </span> 
-                  </div>
-                  <div class="mb-3">
-                      <hr class="new1 letters-grey">
-                  </div>
-                  <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">1 Adulto </span> <span class="text-muted letters-grey">₡15000</span> </div>
-                  <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">2 Niños </span> <span class="text-muted letters-grey">₡20000</span> </div>
-                  <div class="d-flex justify-content-between mt-3"> <span class="font-weight-bold total-color">Total</span> <span class="font-weight-bold theme-color total-color">₡35000</span> </div>
-                  <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#modalCuenta">
-                    registrarse
-                </button>
-                  <!--<div class="text-center mt-5"> <button class="btn btn-register">registrarse</button> </div>-->
-                </div>    
+                    <h4 class="mt-5 register-tittle mb-5">REGISTRO DE PARTICIPANTES</h4> 
+                    <div class="d-flex justify-content-between letters-grey"> <span class="font-weight-bold">Tipo de participante</span> 
+                      <span class="text-muted letters-grey">
+                        <select name="tipo-persona" id="tipo-persona">
+                          <option value="adulto">Adulto</option>
+                          <option value="niño">Niño</option>
+                        </select>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 letters-grey"> <span class="font-weight-bold">Cantidad de personas</span> 
+                      <span class="text-muted">
+                        <input type="number" min="1" size="3" class="input-number">
+                      </span> 
+                    </div>
+                    <div class="mb-3">
+                        <hr class="new1 letters-grey">
+                    </div>
+                    <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">1 Adulto </span> <span class="text-muted letters-grey">₡15000</span> </div>
+                    <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">2 Niños </span> <span class="text-muted letters-grey">₡20000</span> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span class="font-weight-bold total-color">Total</span> <span class="font-weight-bold theme-color total-color">₡35000</span> </div>
+                    <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register-modal" data-bs-toggle="modal" data-bs-target="#modalCuenta">
+                      registrarse
+                  </button>
+                    
+                  </div>    
 
+                </div>
               </div>
             </div>
-          </div>
-      </div>
-  </div>
-  <!-- modal registro -->
+        </div>
+    </div>
+    <!-- modal registro -->
 
     <!-- modal cuenta-->
     <div class="modal fade" id="modalCuenta" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
@@ -241,7 +241,7 @@
                       <label for="lname" class="letters-grey">Correo electrónico</label>
                       <input type="text" id="lname" name="lname"><br><br>
                     </form>
-                    <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#modalRevision">
+                    <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register-modal" data-bs-toggle="modal" data-bs-target="#modalRevision">
                       registrarse
                   </button>
                  </div>    
@@ -304,7 +304,7 @@
                   <hr class="new1 letters-grey">
                   <div class="d-flex justify-content-center mt-3"> <span class="font-weight-bold total-color">¡QUE DISFRUTE DEL EVENTO!</span>
                 </div>
-                  <a href="./evento.html"  class="btn btn-register">registrarse</a>
+                  <a href="./evento.html"  class="btn btn-register-modal">registrarse</a>
                  
                </div>    
 
@@ -312,19 +312,19 @@
            </div>
          </div>
      </div>
- </div>
- </div>
- <!-- modal revision -->
-
-  <!-- footer -->
-  <footer>
-    <p class="footer-endurance">ENDURANCE<span class="footer-tickets">TICKETS</span></p>
-    <p class="copyright"> &copy;2021 Copyright: @abbylopez00</p>
-  </footer>
-  <!-- footer -->
-
   </div>
-  <!-- container -->
+  </div>
+  <!-- modal revision -->
+
+    <!-- footer -->
+    <footer>
+      <p class="footer-endurance">ENDURANCE<span class="footer-tickets">TICKETS</span></p>
+      <p class="copyright"> &copy;2021 Copyright: @abbylopez00</p>
+    </footer>
+    <!-- footer -->
+
+</div>
+<!-- container -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>

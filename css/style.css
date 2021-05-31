@@ -519,8 +519,14 @@ a {
   font-family: "robotoblack";
   font-size: 1em;
   color: #EBEBED;
-  margin: 2em 2em 0 20em;
-  padding: 1em 2em;
+  margin: 2em 2em 0 14em;
+  padding: 1em 5em;
+}
+@media only screen and (max-width: 480px) {
+  .btn-register {
+    margin: 1em 2em;
+    padding: 1em 5em;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .btn-register {
@@ -532,18 +538,6 @@ a {
   .btn-register {
     margin: 1em 3em;
     padding: 1em 5em;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .btn-register {
-    margin: 0 1em;
-    padding: 1em 5em;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  .btn-register {
-    margin: 1em 0em 1em 2em;
-    padding: 1em 7.5em;
   }
 }
 
@@ -588,6 +582,39 @@ a {
   }
 }
 
+.btn-register-modal {
+  background-color: #17BF63;
+  font-family: "robotoblack";
+  font-size: 1em;
+  color: #EBEBED;
+  margin: 2em 2em 0 20em;
+  padding: 1em 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .btn-register-modal {
+    margin: 1em 0em 1em 2em;
+    padding: 1em 7.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn-register-modal {
+    margin: 1em 3em;
+    padding: 1em 5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn-register-modal {
+    margin: 1em auto;
+    padding: 1em 5em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .btn-register-modal {
+    margin: 1em 0em 1em 0em;
+    padding: 1em 7.5em;
+  }
+}
+
 .modal-content {
   background-color: #252733;
   border-radius: 3em;
@@ -613,22 +640,21 @@ a {
 .modal-register {
   position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 480px) {
   .modal-register {
-    top: -35em;
-    margin: 0 2.8em 0 0;
+    top: -36em;
   }
 }
 @media only screen and (max-width: 767px) {
   .modal-register {
-    top: 1em;
     margin: auto;
-    padding: 0 3em 0 0;
+    padding: 0 3em 0 2em;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .modal-register {
-    top: -36em;
+    top: -35em;
+    margin: 0 2.8em 0;
   }
 }
 
@@ -671,6 +697,7 @@ a {
   background-color: #17BF63;
   top: 12em;
   margin-left: 2em;
+  opacity: 0.75;
 }
 
 .price {
@@ -772,6 +799,11 @@ input[type=text] {
   border: none;
   border-bottom: 2px solid #17BF63;
   background-color: #252733;
+}
+@media only screen and (max-width: 480px) {
+  input[type=text] {
+    width: 90%;
+  }
 }
 
 .progressbar li.step2 {

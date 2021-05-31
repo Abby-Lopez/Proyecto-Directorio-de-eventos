@@ -55,16 +55,16 @@
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./img/tenisVerdes.jpg" class="border-img d-block w-100" alt="...">
+        <img src="./img/tenisVerdes.jpg" class="border-img d-block w-100" alt="Tenis verdes">
       </div>
       <div class="carousel-item">
-        <img src="./img/palco.jpg" class="border-img d-block w-100" alt="...">
+        <img src="./img/palco.jpg" class="border-img d-block w-100" alt="Palco de triatlon">
       </div>
       <div class="carousel-item">
-        <img src="./img/filaCiclistas.jpg" class="border-img d-block w-100" alt="...">
+        <img src="./img/filaCiclistas.jpg" class="border-img d-block w-100" alt="Fila de ciclistas">
       </div>
       <div class="carousel-item">
-        <img src="./img/clavado.jpg" class=" border-img d-block w-100" alt="...">
+        <img src="./img/clavado.jpg" class=" border-img d-block w-100" alt="Clavado en el agua">
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@
               <p class="date-number">05</p>
               <P class="date-text">2021</P>
             </div>
-            <img src="./img/trailRunner.jpg" class="card-img-top" alt="...">
+            <img src="./img/trailRunner.jpg" class="card-img-top" alt="Trail runner">
             <div class="card-body">
               <h5 class="card-title">NOMBRE DEL EVENTO </h5>
               <p class="card-text">Lugar - 00:00 am</p>
@@ -101,7 +101,7 @@
               <p class="date-number">05</p>
               <P class="date-text">2021</P>
             </div>
-            <img src="./img/ciclistaRuta.jpg" class="card-img-top" alt="...">
+            <img src="./img/ciclistaRuta.jpg" class="card-img-top" alt="Ciclista de ruta">
             <div class="card-body">
               <h5 class="card-title">NOMBRE DEL EVENTO </h5>
               <p class="card-text">Lugar - 00:00 am</p>
@@ -119,7 +119,7 @@
               <p class="date-number">05</p>
               <P class="date-text">2021</P>
             </div>
-            <img src="./img/neopreno.jpg" class="card-img-top" alt="...">
+            <img src="./img/neopreno.jpg" class="card-img-top" alt="Neopreno">
             <div class="card-body">
               <h5 class="card-title">NOMBRE DEL EVENTO </h5>
               <p class="card-text">Lugar - 00:00 am</p>
@@ -137,7 +137,7 @@
               <p class="date-number">05</p>
               <P class="date-text">2021</P>
             </div>
-            <img src="./img/colorRun.jpg" class="card-img-top" alt="...">
+            <img src="./img/colorRun.jpg" class="card-img-top" alt="Color run">
             <div class="card-body">
               <h5 class="card-title">NOMBRE DEL EVENTO </h5>
               <p class="card-text">Lugar - 00:00 am</p>

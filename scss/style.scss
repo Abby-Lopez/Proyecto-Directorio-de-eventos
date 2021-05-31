@@ -386,8 +386,13 @@ a{
 .btn-register{
     background-color: $green;
     @include set-text('robotoblack', 1em, $letters-white);
-    margin: 2em 2em 0 20em;
-    padding: 1em 2em;
+    margin: 2em 2em 0 14em;
+    padding: 1em 5em;
+   
+    @include respond-to($phone) {
+        margin: 1em 2em;
+        padding: 1em 5em;
+    }
     @include respond-to($tablet-landscape) {
         margin: 1em 0em 1em 2em;
         padding: 1em 7.5em;
@@ -397,16 +402,7 @@ a{
         margin: 1em 3em;
         padding: 1em 5em;
     }
-    @include respond-to($phone) {
-        margin: 0 1em;
-        padding: 1em 5em;
-    }
     
-    @include respond-to($tablet-landscape) {
-        margin: 1em 0em 1em 2em;
-        padding: 1em 7.5em;
-    
-    }
 }
 .card-date-e{
     position: absolute;
@@ -443,7 +439,31 @@ a{
 
 
 //---------------------------------------------------------------MODAL REGISTRO--------------------------------------------------------------------
-
+.btn-register-modal{
+    background-color: $green;
+    @include set-text('robotoblack', 1em, $letters-white);
+    margin: 2em 2em 0 20em;
+    padding: 1em 2em;
+    @include respond-to($tablet-landscape) {
+        margin: 1em 0em 1em 2em;
+        padding: 1em 7.5em;
+    
+    }
+    @include respond-to($tablet-portrait) {
+        margin: 1em 3em;
+        padding: 1em 5em;
+    }
+    @include respond-to($phone) {
+        margin: 1em auto;
+        padding: 1em 5em;
+    }
+    
+    @include respond-to($tablet-landscape) {
+        margin: 1em 0em 1em 0em;
+        padding: 1em 7.5em;
+    
+    }
+}
 //IMAGE
 .modal-content{
     background-color: $card-grey;
@@ -463,18 +483,19 @@ a{
 }
 .modal-register{
     position: relative;
-    
-    @include respond-to($tablet-landscape) {
-        top: -35em;
-        margin: 0 2.8em 0 0;
+
+     @include respond-to($phone) {
+        top: -36em;
+        
     }
     @include respond-to($tablet-portrait){ 
-        top: 1em;
+        
         margin: auto;
-        padding: 0 3em 0 0;
+        padding: 0 3em 0 2em;
     }
-    @include respond-to($phone) {
-        top: -36em;
+    @include respond-to($tablet-landscape) {
+        top: -35em;
+        margin: 0 2.8em 0;
     }
 }
 .modal-image{
@@ -511,6 +532,7 @@ a{
     background-color: $green;
     top: 12em;
     margin-left: 2em;
+    opacity: 0.75;
 }
 .price{
     margin: 0;
@@ -597,6 +619,9 @@ input[type=text] {
     border: none;
     border-bottom: 2px solid $green;
     background-color: $card-grey;
+    @include respond-to($phone) {
+        width: 90%;   
+    }
   }
   .progressbar li.step2{
     color: $green;
@@ -611,7 +636,7 @@ input[type=text] {
     padding-left: 1em;
 }
 
-//---------------------------------------------------------------MODAL CUENTA--------------------------------------------------------------------
+//---------------------------------------------------------------MODAL REVISION--------------------------------------------------------------------
 
 .progressbar li.step3{
     color: $green;

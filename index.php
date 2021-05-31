@@ -18,14 +18,14 @@
   <!--nav-->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="logo-endurance" href="./index.html">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
+        <a class="logo-endurance" href="./index.php">ENDURANCE<span class="logo-tickets">TICKETS</span></a>
       <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,7 +76,7 @@
     <h2 class="galery-text">GALERIA DE EVENTOS </h2>
     <div class="row container pb-5 m-auto">
       <div class="col-sm">
-        <a href="./evento.html">
+        <a href="./evento.php">
           <div class="card" style="width: 18rem;">
             <div class="card-date">
               <p class="date-text">Julio</p>
@@ -94,7 +94,7 @@
       </div>
 
       <div class="col-sm">
-        <a href="./evento.html">
+        <a href="./evento.php">
           <div class="card" style="width: 18rem;">
             <div class="card-date">
               <p class="date-text">Julio</p>
@@ -112,7 +112,7 @@
       </div>
 
       <div class="col-sm">
-        <a href="./evento.html">
+        <a href="./evento.php">
           <div class="card" style="width: 18rem;">
             <div class="card-date">
               <p class="date-text">Julio</p>
@@ -130,7 +130,7 @@
       </div>
 
       <div class="col-sm">
-        <a href="./evento.html">
+        <a href="./evento.php">
           <div class="card" style="width: 18rem;">
             <div class="card-date">
               <p class="date-text">Julio</p>

@@ -304,7 +304,7 @@
                   <hr class="new1 letters-grey">
                   <div class="d-flex justify-content-center mt-3"> <span class="font-weight-bold total-color">¡QUE DISFRUTE DEL EVENTO!</span>
                 </div>
-                  <a href="./evento.html"  class="btn btn-register-modal">registrarse</a>
+                  <a href="./evento.php"  class="btn btn-register-modal">registrarse</a>
                  
                </div>    
 

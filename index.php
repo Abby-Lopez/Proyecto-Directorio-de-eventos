@@ -85,7 +85,7 @@
             </div>
             <img src="./img/trailRunner.jpg" class="card-img-top" alt="Trail runner">
             <div class="card-body">
-              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+              <h2 class="card-title">NOMBRE DEL EVENTO </h2>
               <p class="card-text">Lugar - 00:00 am</p>
               <p class="card-category">Categoría</p>
             </div>
@@ -103,7 +103,7 @@
             </div>
             <img src="./img/ciclistaRuta.jpg" class="card-img-top" alt="Ciclista de ruta">
             <div class="card-body">
-              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+              <h2 class="card-title">NOMBRE DEL EVENTO </h2>
               <p class="card-text">Lugar - 00:00 am</p>
               <p class="card-category">Categoría</p>
             </div>
@@ -121,7 +121,7 @@
             </div>
             <img src="./img/neopreno.jpg" class="card-img-top" alt="Neopreno">
             <div class="card-body">
-              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+              <h2 class="card-title">NOMBRE DEL EVENTO </h2>
               <p class="card-text">Lugar - 00:00 am</p>
               <p class="card-category">Categoría</p>
             </div>
@@ -139,7 +139,7 @@
             </div>
             <img src="./img/colorRun.jpg" class="card-img-top" alt="Color run">
             <div class="card-body">
-              <h5 class="card-title">NOMBRE DEL EVENTO </h5>
+              <h2 class="card-title">NOMBRE DEL EVENTO </h2>
               <p class="card-text">Lugar - 00:00 am</p>
               <p class="card-category">Categoría</p>
             </div>

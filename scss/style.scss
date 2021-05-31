@@ -42,6 +42,17 @@ a{
     @include respond-to($phone) {
         visibility: hidden;
     }
+    @include respond-to($tablet-portrait) {
+        margin: 1em 0 0 1em;
+        font-size: 2.5em;
+        width: 50%;
+     }
+    @include respond-to($tablet-landscape) {
+        font-size: 2.5em;
+        margin: 1em 0 0 1.8em;
+        width: 40%;
+     }
+     
 }
 .header-text{
     position: absolute;
@@ -51,13 +62,28 @@ a{
     @include respond-to($phone) {
         visibility: hidden;
     }
+    @include respond-to($tablet-portrait) {
+        margin: 12em 0 0 2.5em;
+        font-size: 1em;
+     }
+    @include respond-to($tablet-landscape) {
+        margin: 12em 0 0 4em;
+        font-size: 1.2em;
+     }  
 }
 //NAV
 .container{
     margin: 0 1em 0 1em;
     @include respond-to($phone) {
         margin: auto;
+    }
+    @include respond-to($tablet-portrait) {
+        max-width: 767px;
      }
+    @include respond-to($tablet-landscape) {
+        margin: auto;
+     }
+     
 }
 .logo-endurance{
     @include set-text('robotobold', 1.2em, $green);
@@ -80,6 +106,13 @@ a{
     @include respond-to($phone) {
         margin: auto;
      }
+     @include respond-to($tablet-portrait) {
+        margin: auto;
+     }
+     @include respond-to($tablet-landscape) {
+        margin: auto;
+     }
+    
 }
 .nav-link{
     color: $ligth-grey;
@@ -149,11 +182,12 @@ a{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: $nav-grey;
+	background-color: $card-grey;
     opacity: 0.6;
     @include respond-to($phone) {
         bottom: 1em;
         height: 12em;
+        background-color: $nav-grey;
     }
 }
 .border-img{
@@ -168,7 +202,7 @@ a{
 }
 .galery-text{
     @include set-text('robotobold', 1em, $footer-grey);
-    padding: 2em 6em;
+    padding: 2em 5em;
     @include respond-to($phone) {
         padding: 2em 2em;
     }
@@ -235,11 +269,26 @@ a{
     width: 100%;
     height: 450px;
     background-size: cover;
+    @include respond-to($phone) {
+        height: 11em;
+    }
+    @include respond-to($tablet-portrait) {
+        height: 18em;
+    }
 }
 .card-content{
     //position: absolute;
     background-color: $card-grey;
     border-radius: 2em;
+}
+.card-info-container{
+    @include respond-to($phone) {
+        padding: 0 0 0 1em;
+    }
+    @include respond-to($tablet-portrait) {
+        padding: 0;
+        margin: 0 2em;
+    }
 }
 .card-info-top{
     display: inline-block;
@@ -250,18 +299,40 @@ a{
     border-radius: 1em;
     padding: .5em 1em;
     margin: 1em;
+    @include respond-to($phone) {
+        padding: 0.5em 0.8em;
+        margin: 0.2em;
+    }
 }
 .info-reg-green{
     background-color: $green;
+    
 }
 .info-text{
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    @include respond-to($phone) {
+        font-size: 0.7em;
+    }
 }
 .progress-bar-content{
     margin-top: 3em;
     padding: 0 5em 0 15em ;
+    @include respond-to($phone) {
+        margin-top: 0;
+        padding: 0 2em 0 2em;
+    }
+    @include respond-to($tablet-portrait) {
+        width: 100%;
+        margin-top: 1em;
+        padding: 0 4em 0 4em;
+    }
+    @include respond-to($tablet-landscape) {
+        width: 100%;
+        margin-top: 1em;
+        padding: 0 4em 0 4em;
+    }
 }
 .progress{
     height: 2em;
@@ -273,21 +344,56 @@ a{
 }
 .card-main-info{
     padding: 0 5em;
+    @include respond-to($phone) {
+        padding: 2em 2em;
+    }
+    @include respond-to($tablet-portrait) {
+        padding: 0 3em;
+        width: 100%;
+    }
+    @include respond-to($tablet-landscape) {
+        padding: 0 3em;
+        width: 100%;
+    }
 }
 .card-title-event{
     @include set-text('robotoblack', 2em, $letters-white);
+    @include respond-to($phone) {
+        font-size: 1.5em;
+    }
+    @include respond-to($tablet-portrait) {
+        margin-top: 1.5em;
+    }
+    @include respond-to($tablet-landscape) {
+        margin-top: 2em;
+    }
 }
 .card-date-event{
     @include set-text('robotomedium', 1em, $letters-grey);
 }
 .card-text-event{
     @include set-text('robotomedium', 1em, $letters-white);
+    @include respond-to($phone) {
+        font-size: 0.9em;
+    }
 }
 .btn-register{
     background-color: $green;
     @include set-text('robotoblack', 1em, $letters-white);
     margin: 2em 2em 0 20em;
     padding: 1em 2em;
+    @include respond-to($phone) {
+        margin: 0 1em;
+        padding: 1em 6.5em;
+    }
+    @include respond-to($tablet-portrait) {
+        margin: 1em 3em;
+        padding: 1em 5.5em;
+    }
+    @include respond-to($tablet-landscape) {
+        margin: 1em 3em 1em 21em;
+        padding: 1em 5.5em;
+    }
 }
 .card-date-e{
     position: absolute;
@@ -296,6 +402,10 @@ a{
     color: #202028;
     margin: 0px 5em;
     padding: 0.5em 1.5em;
+    @include respond-to($phone) {
+        margin: 0px 2em;
+        padding: 0.5em 1.2em;
+    }
 }
 .date-text-e {
     font-family: "robotoregular";
@@ -303,6 +413,9 @@ a{
     color: #252733;
     margin: 0;
     text-align: center;
+    @include respond-to($phone) {
+        font-size: 0.8em;
+    }
 }
 .date-number-e {
     font-family: "robotobold";
@@ -310,6 +423,9 @@ a{
     color: #252733;
     margin: 0;
     line-height: 0.9em;
+    @include respond-to($phone) {
+        font-size: 2em;
+    }
 }
 
 

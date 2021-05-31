@@ -235,11 +235,11 @@
                  <h4 class="mt-5 register-tittle">CUENTA PARTICIPANTE</h4> 
                     <form class="cuenta" action="/action_page.php">
                       <label for="fname" class="letters-grey">Nombre</label>
-                      <input type="text" id="fname" name="fname"><br><br>
+                      <input type="text"><br><br>
                       <label for="lname" class="letters-grey">Apellidos</label>
-                      <input type="text" id="lname" name="lname"><br><br>
+                      <input type="text" ><br><br>
                       <label for="lname" class="letters-grey">Correo electrónico</label>
-                      <input type="text" id="lname" name="lname"><br><br>
+                      <input type="text"><br><br>
                     </form>
                     <button type="button" v-on:click="showEventDetails(index)" class="btn btn-register-modal" data-bs-toggle="modal" data-bs-target="#modalRevision">
                       registrarse

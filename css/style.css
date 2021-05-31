@@ -69,9 +69,11 @@ a {
   width: 35%;
   margin: 3em 0 0 1.8em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .header-tittle {
-    visibility: hidden;
+    font-size: 2.5em;
+    margin: 1em 0 0 1.8em;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -81,11 +83,9 @@ a {
     width: 50%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 480px) {
   .header-tittle {
-    font-size: 2.5em;
-    margin: 1em 0 0 1.8em;
-    width: 40%;
+    visibility: hidden;
   }
 }
 
@@ -97,9 +97,10 @@ a {
   color: #17BF63;
   margin: 14em 0 0 4em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .header-text {
-    visibility: hidden;
+    margin: 12em 0 0 4em;
+    font-size: 1.2em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -108,17 +109,16 @@ a {
     font-size: 1em;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 480px) {
   .header-text {
-    margin: 12em 0 0 4em;
-    font-size: 1.2em;
+    visibility: hidden;
   }
 }
 
 .container {
   margin: 0 1em 0 1em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .container {
     margin: auto;
   }
@@ -128,7 +128,7 @@ a {
     max-width: 767px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 480px) {
   .container {
     margin: auto;
   }
@@ -157,7 +157,7 @@ a {
 .navbar-collapse {
   margin: 0 -8em 0 3em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .navbar-collapse {
     margin: auto;
   }
@@ -167,7 +167,7 @@ a {
     margin: auto;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (max-width: 480px) {
   .navbar-collapse {
     margin: auto;
   }
@@ -522,22 +522,28 @@ a {
   margin: 2em 2em 0 20em;
   padding: 1em 2em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 979px) {
   .btn-register {
-    margin: 0 1em;
-    padding: 1em 6.5em;
+    margin: 1em 0em 1em 2em;
+    padding: 1em 7.5em;
   }
 }
 @media only screen and (max-width: 767px) {
   .btn-register {
     margin: 1em 3em;
-    padding: 1em 5.5em;
+    padding: 1em 5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn-register {
+    margin: 0 1em;
+    padding: 1em 5em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .btn-register {
-    margin: 1em 3em 1em 21em;
-    padding: 1em 5.5em;
+    margin: 1em 0em 1em 2em;
+    padding: 1em 7.5em;
   }
 }
 
@@ -586,6 +592,44 @@ a {
   background-color: #252733;
   border-radius: 3em;
   height: 36em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .modal-1-page {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .modal-1-page {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modal-1-page {
+    visibility: hidden;
+  }
+}
+
+.modal-register {
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .modal-register {
+    top: -35em;
+    margin: 0 2.8em 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .modal-register {
+    top: 1em;
+    margin: auto;
+    padding: 0 3em 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modal-register {
+    top: -36em;
+  }
 }
 
 .modal-image {

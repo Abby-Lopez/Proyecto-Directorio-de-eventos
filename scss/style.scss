@@ -39,19 +39,21 @@ a{
     line-height: 1.1em;
     width: 35%;
     margin: 3em 0 0 1.8em;
-    @include respond-to($phone) {
-        visibility: hidden;
-    }
-    @include respond-to($tablet-portrait) {
-        margin: 1em 0 0 1em;
-        font-size: 2.5em;
-        width: 50%;
-     }
     @include respond-to($tablet-landscape) {
         font-size: 2.5em;
         margin: 1em 0 0 1.8em;
         width: 40%;
      }
+     @include respond-to($tablet-portrait) {
+        margin: 1em 0 0 1em;
+        font-size: 2.5em;
+        width: 50%;
+     }
+    @include respond-to($phone) {
+        visibility: hidden;
+    }
+   
+    
      
 }
 .header-text{
@@ -59,30 +61,32 @@ a{
     z-index: 1;
     @include set-text('robotoblack', 1.5em, $green);
     margin: 14em 0 0 4em;
-    @include respond-to($phone) {
-        visibility: hidden;
-    }
+    @include respond-to($tablet-landscape) {
+        margin: 12em 0 0 4em;
+        font-size: 1.2em;
+     }
     @include respond-to($tablet-portrait) {
         margin: 12em 0 0 2.5em;
         font-size: 1em;
      }
-    @include respond-to($tablet-landscape) {
-        margin: 12em 0 0 4em;
-        font-size: 1.2em;
-     }  
+    @include respond-to($phone) {
+        visibility: hidden;
+    }
+   
+      
 }
 //NAV
 .container{
     margin: 0 1em 0 1em;
-    @include respond-to($phone) {
-        margin: auto;
-    }
-    @include respond-to($tablet-portrait) {
-        max-width: 767px;
-     }
     @include respond-to($tablet-landscape) {
         margin: auto;
      }
+    @include respond-to($tablet-portrait) {
+        max-width: 767px;
+     }
+    @include respond-to($phone) {
+        margin: auto;
+    }
      
 }
 .logo-endurance{
@@ -102,16 +106,18 @@ a{
     background-color: $nav-grey;
 }
 .navbar-collapse {
+    @include respond-to($tablet-landscape) {
+        margin: auto;
+     }
+    @include respond-to($tablet-portrait) {
+        margin: auto;
+     }
     margin: 0 -8em 0 3em;
     @include respond-to($phone) {
         margin: auto;
      }
-     @include respond-to($tablet-portrait) {
-        margin: auto;
-     }
-     @include respond-to($tablet-landscape) {
-        margin: auto;
-     }
+    
+     
     
 }
 .nav-link{
@@ -382,17 +388,24 @@ a{
     @include set-text('robotoblack', 1em, $letters-white);
     margin: 2em 2em 0 20em;
     padding: 1em 2em;
-    @include respond-to($phone) {
-        margin: 0 1em;
-        padding: 1em 6.5em;
+    @include respond-to($tablet-landscape) {
+        margin: 1em 0em 1em 2em;
+        padding: 1em 7.5em;
+    
     }
     @include respond-to($tablet-portrait) {
         margin: 1em 3em;
-        padding: 1em 5.5em;
+        padding: 1em 5em;
     }
+    @include respond-to($phone) {
+        margin: 0 1em;
+        padding: 1em 5em;
+    }
+    
     @include respond-to($tablet-landscape) {
-        margin: 1em 3em 1em 21em;
-        padding: 1em 5.5em;
+        margin: 1em 0em 1em 2em;
+        padding: 1em 7.5em;
+    
     }
 }
 .card-date-e{
@@ -436,6 +449,33 @@ a{
     background-color: $card-grey;
     border-radius: 3em;
     height: 36em;
+}
+.modal-1-page{
+    @include respond-to($tablet-landscape) {
+        visibility: hidden;
+    }
+    @include respond-to($tablet-portrait) {
+        visibility: hidden;
+    }
+    @include respond-to($phone) {
+        visibility: hidden;
+    }
+}
+.modal-register{
+    position: relative;
+    
+    @include respond-to($tablet-landscape) {
+        top: -35em;
+        margin: 0 2.8em 0 0;
+    }
+    @include respond-to($tablet-portrait){ 
+        top: 1em;
+        margin: auto;
+        padding: 0 3em 0 0;
+    }
+    @include respond-to($phone) {
+        top: -36em;
+    }
 }
 .modal-image{
     background: url(../img/aguasAbiertas.jpg);

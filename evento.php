@@ -85,7 +85,7 @@
               <h5 class="galery-text">EVENTOS SIMILARES</h5>
               <div class="row container pb-5 m-auto">
                 <div class="col-sm">
-                  <a href="./evento.html">
+                  <a href="./evento.php">
                     <div class="card" style="width: 18rem;">
                       <div class="card-date">
                         <p class="date-text">Julio</p>
@@ -102,7 +102,7 @@
                 </div>
           
                 <div class="col-sm">
-                  <a href="./evento.html">
+                  <a href="./evento.php">
                     <div class="card" style="width: 18rem;">
                       <div class="card-date">
                         <p class="date-text">Julio</p>
@@ -119,7 +119,7 @@
                 </div>
           
                 <div class="col-sm">
-                  <a href="./evento.html">
+                  <a href="./evento.php">
                     <div class="card" style="width: 18rem;">
                       <div class="card-date">
                         <p class="date-text">Julio</p>
@@ -136,7 +136,7 @@
                 </div>
           
                 <div class="col-sm">
-                  <a href="./evento.html">
+                  <a href="./evento.php">
                     <div class="card" style="width: 18rem;">
                       <div class="card-date">
                         <p class="date-text">Julio</p>
@@ -295,7 +295,7 @@
                   </span> 
                 </div>
                  <div class="mb-3">
-                     <hr class="new1 letters-grey">
+                     <hr class="new1 letters-grey"> 
                  </div>
                  <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">1 Adulto </span> <span class="text-muted letters-grey">₡15000</span> </div>
                  <div class="d-flex justify-content-between"> <span class="font-weight-bold letters-grey">2 Niños </span> <span class="text-muted letters-grey">₡20000</span> </div>
@@ -304,7 +304,7 @@
                   <hr class="new1 letters-grey">
                   <div class="d-flex justify-content-center mt-3"> <span class="font-weight-bold total-color">¡QUE DISFRUTE DEL EVENTO!</span>
                 </div>
-                  <a href="./evento.php"  class="btn btn-register-modal">terminar</a>
+                  <a href="./evento.php"  class="btn btn-register-modal">terminar</a> 
                  
                </div>    
 
